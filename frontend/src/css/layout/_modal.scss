@@ -1,0 +1,19 @@
+.modal{
+	@extend .absolute;
+	top:50%; left:50%;
+	@include transXY();
+	height:90%;
+	width:90%;
+	background-color:#40424A;
+	// background-color:#52565E;
+	// background-color:#424242;
+	border-radius:6px;
+	z-index:10;
+	padding:5vh;
+	transition:$transition;
+}
+.modal--inactive{
+	// opacity:0;
+	z-index:-1;
+	transform:translate(-50%, 200%);
+}

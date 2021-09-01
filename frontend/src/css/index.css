@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 0;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+body {
+  position: relative;
+  z-index: auto;
+  height: 100vh;
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+  overflow: hidden;
+  background: linear-gradient(to top right, #324ceb, #d94b87);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+
+.inlineBlock, .app--wrapper, .app--wrapper .app--wrapper--item, .app--wrapper .form, .app--wrapper .userList, .app--wrapper .transactions, .app--wrapper .app--wrapper--item .app--wrapper--item--title, .app--wrapper .form .app--wrapper--item--title, .app--wrapper .userList .app--wrapper--item--title, .app--wrapper .transactions .app--wrapper--item--title, .form .app--wrapper .app--wrapper--item .form--title, .app--wrapper .form .form--title, .form .app--wrapper .userList .form--title, .form .app--wrapper .transactions .form--title, .userList .app--wrapper .app--wrapper--item .userList--title, .userList .app--wrapper .form .userList--title, .app--wrapper .userList .userList--title, .userList .app--wrapper .transactions .userList--title, .transactions .app--wrapper .app--wrapper--item .transactions--title, .transactions .app--wrapper .form .transactions--title, .transactions .app--wrapper .userList .transactions--title, .app--wrapper .transactions .transactions--title, .button, .form .form--submit, .form .form--selected--user, .form .form--input--wrapper, .form .form--input--wrapper[name="text"] .form--input, .form .form--input--wrapper[name="radio"] .form--input--label, .form .form--task--colour--selector--wrapper, .form .form--task--colour--selector--wrapper .form--task--colour--selector--wrapper--label, .form .form--task--colour--selector--wrapper .task--colour--selector--label, .userList .userList--item--wrapper, .userList .userList--item--wrapper .userList--item, .userList .userList--item--wrapper .userList--item .userList--item--image i, .userList .userList--item--wrapper .userList--item .userList--item--name,
+.userList .userList--item--wrapper .userList--item .userList--item--amount,
+.userList .userList--item--wrapper .userList--item .userList--item--lastWorked, .transactions .transactions--wrapper--wrapper, .transactions .transactions--wrapper--wrapper .transactions--wrapper, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--wrapper--message, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item .transactions--item--text {
+  position: relative;
+  z-index: auto;
+  display: inline-block;
+  vertical-align: top; }
+
+.absolute, .fixed, .form .form--input--wrapper[name="text"] .form--input--label, .userList .userList--item--wrapper .userList--item .userList--item--image, .userList .userList--item--wrapper .userList--item .userList--item--selected, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item i {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.fixed {
+  position: fixed; }
+
+::-webkit-scrollbar {
+  width: 17.5px; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box; }
+
+:root {
+  font-size: 1.8vh; }
+
+* {
+  color: white;
+  font-family: 'Poppins', sans-serif; }
+
+.app--wrapper {
+  width: 100%;
+  height: 100vh;
+  padding: 5vh;
+  text-align: left; }
+  .app--wrapper .app--wrapper--item, .app--wrapper .form, .app--wrapper .userList, .app--wrapper .transactions {
+    width: 30%;
+    margin: 0 5% 0 0;
+    height: 100%;
+    padding: 5vh;
+    background-color: rgba(11, 13, 15, 0.5);
+    border-radius: 6px;
+    backdrop-filter: blur(15px); }
+    .app--wrapper .app--wrapper--item:last-child, .app--wrapper .form:last-child, .app--wrapper .userList:last-child, .app--wrapper .transactions:last-child {
+      margin: 0; }
+    .app--wrapper .app--wrapper--item .app--wrapper--item--title, .app--wrapper .form .app--wrapper--item--title, .app--wrapper .userList .app--wrapper--item--title, .app--wrapper .transactions .app--wrapper--item--title, .form .app--wrapper .app--wrapper--item .form--title, .app--wrapper .form .form--title, .form .app--wrapper .userList .form--title, .form .app--wrapper .transactions .form--title, .userList .app--wrapper .app--wrapper--item .userList--title, .userList .app--wrapper .form .userList--title, .app--wrapper .userList .userList--title, .userList .app--wrapper .transactions .userList--title, .transactions .app--wrapper .app--wrapper--item .transactions--title, .transactions .app--wrapper .form .transactions--title, .transactions .app--wrapper .userList .transactions--title, .app--wrapper .transactions .transactions--title {
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase; }
+
+.button, .form .form--submit {
+  background-color: #324ceb;
+  border-radius: 6px;
+  text-transform: uppercase;
+  font-size: .75rem;
+  padding: 1.25vh 2.5vh;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0.2s; }
+
+.form .form--selected--user {
+  width: 100%;
+  margin: 5vh 0;
+  color: white;
+  font-size: .75rem;
+  text-transform: uppercase; }
+.form .form--input--wrapper {
+  width: 100%;
+  margin: 5vh 0; }
+.form .form--input--wrapper[name="text"] .form--input--label {
+  top: 0%;
+  width: 100%;
+  color: white;
+  font-size: .75rem;
+  text-transform: uppercase;
+  transition: all .3s ease; }
+.form .form--input--wrapper[name="text"] .form--input {
+  width: 100%;
+  padding: 4vh 0 2.5vh 0;
+  border-bottom: 1px solid white;
+  font-size: .75rem; }
+.form .form--input--wrapper[name="radio"] .form--input[name="radios"] {
+  display: none; }
+.form .form--input--wrapper[name="radio"] .form--input--label {
+  color: white;
+  font-size: .75rem;
+  text-transform: uppercase;
+  transition: all .3s ease;
+  padding: 1.25vh 2.5vh;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.075);
+  margin: 0 2.5vh 0 0;
+  cursor: pointer; }
+.form .form--input--wrapper[name="radio"] .form--input[name="radios"]:checked + .form--input--label {
+  background-color: #324ceb; }
+.form .form--task--colour--selector--wrapper {
+  width: 100%;
+  padding: 5vh 0; }
+  .form .form--task--colour--selector--wrapper .form--task--colour--selector--wrapper--label {
+    width: 100%;
+    font-size: .75rem;
+    color: white;
+    text-transform: uppercase;
+    padding: 0 0 2.5vh 0; }
+  .form .form--task--colour--selector--wrapper input[type="radio"] {
+    display: none; }
+  .form .form--task--colour--selector--wrapper .task--colour--selector--label {
+    height: 3vh;
+    width: 3vh;
+    border-radius: 100%;
+    cursor: pointer;
+    margin: 0 1.25vh 0 0; }
+  .form .form--task--colour--selector--wrapper .form--radio:checked + .task--colour--selector--label {
+    border: 3px solid white; }
+.form .form--submit {
+  font-size: .75rem;
+  background-color: #324ceb;
+  margin: 2.5vh 0 0 0; }
+
+.userList .userList--item--wrapper {
+  width: 100%; }
+  .userList .userList--item--wrapper .userList--radios {
+    display: none; }
+  .userList .userList--item--wrapper .userList--item {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 1.25vh 2.5vh 1.25vh 10vh;
+    margin: 2.5vh 0 0 0;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out 0.2s; }
+    .userList .userList--item--wrapper .userList--item .userList--item--image {
+      top: 50%;
+      left: 2.5vh;
+      transform: translateY(-50%);
+      height: 5vh;
+      width: 5vh;
+      border-radius: 100%;
+      padding: 2px;
+      border-width: 2px;
+      border-style: solid; }
+      .userList .userList--item--wrapper .userList--item .userList--item--image i {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        background-color: rgba(11, 13, 15, 0.3);
+        background-image: url("../media/icons/user.svg");
+        background-size: 45%; }
+    .userList .userList--item--wrapper .userList--item .userList--item--name,
+    .userList .userList--item--wrapper .userList--item .userList--item--amount,
+    .userList .userList--item--wrapper .userList--item .userList--item--lastWorked {
+      width: 100%;
+      text-transform: capitalize;
+      font-size: .75rem; }
+    .userList .userList--item--wrapper .userList--item .userList--item--name {
+      font-weight: bold; }
+    .userList .userList--item--wrapper .userList--item .userList--item--selected {
+      top: 50%;
+      right: 2.5vh;
+      left: auto;
+      transform: translateY(-50%);
+      background-color: rgba(11, 13, 15, 0.85);
+      height: 1.25vh;
+      width: 1.25vh;
+      border-radius: 100%;
+      font-size: 0;
+      padding: 0;
+      background-size: 50%;
+      opacity: 0;
+      transition: all 0.3s ease-in-out 0.2s; }
+  .userList .userList--item--wrapper .userList--radios:checked + .userList--item {
+    background-color: rgba(255, 255, 255, 0.125); }
+    .userList .userList--item--wrapper .userList--radios:checked + .userList--item .userList--item--selected {
+      opacity: 1; }
+  .userList .userList--item--wrapper .userList--item:hover {
+    background-color: rgba(255, 255, 255, 0.075); }
+
+.transactions .transactions--wrapper--wrapper {
+  width: 100%;
+  height: calc(100% - 11.8vh);
+  margin: 5vh 0;
+  overflow-y: scroll; }
+  .transactions .transactions--wrapper--wrapper .transactions--wrapper {
+    width: 100%; }
+    .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--wrapper--message {
+      width: 100%;
+      font-size: .75rem;
+      color: white;
+      text-transform: uppercase; }
+    .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item {
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1.25vh 2.5vh;
+      margin: 2.5vh 0 0 0;
+      border-radius: 6px; }
+      .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item:first-child {
+        margin: 0; }
+      .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item i {
+        height: 100%;
+        width: 5px;
+        border-radius: 6px 0 0 6px;
+        padding: 2px; }
+      .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item .transactions--item--text {
+        width: 100%;
+        text-transform: uppercase;
+        font-size: .75rem;
+        color: rgba(255, 255, 255, 0.75); }
+      .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item .transactions--item--text[name="date"] {
+        color: white;
+        font-weight: bold; }
+      .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item .transactions--item--text[name="type"] {
+        padding: 1.25vh 0; }
+      .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item .userList--item--name {
+        font-weight: bold; }
+
+/*# sourceMappingURL=index.css.map */

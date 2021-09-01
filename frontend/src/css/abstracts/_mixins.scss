@@ -1,0 +1,9 @@
+@mixin transXY(){
+    transform:translate(-50%,-50%);
+}
+@mixin transX(){
+    transform:translateX(-50%);
+}
+@mixin transY(){
+    transform:translateY(-50%);
+}
