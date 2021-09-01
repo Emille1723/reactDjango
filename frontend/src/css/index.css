@@ -20,12 +20,12 @@ body {
   font-size: 0;
   text-align: center;
   overflow: hidden;
-  background: linear-gradient(to top right, #324ceb, #d94b87);
+  background: linear-gradient(to bottom right, #324ceb, #7559e9);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
-.inlineBlock, .app--wrapper, .app--wrapper .app--wrapper--item, .app--wrapper .form, .app--wrapper .userList, .app--wrapper .transactions, .app--wrapper .app--wrapper--item .app--wrapper--item--title, .app--wrapper .form .app--wrapper--item--title, .app--wrapper .userList .app--wrapper--item--title, .app--wrapper .transactions .app--wrapper--item--title, .form .app--wrapper .app--wrapper--item .form--title, .app--wrapper .form .form--title, .form .app--wrapper .userList .form--title, .form .app--wrapper .transactions .form--title, .userList .app--wrapper .app--wrapper--item .userList--title, .userList .app--wrapper .form .userList--title, .app--wrapper .userList .userList--title, .userList .app--wrapper .transactions .userList--title, .transactions .app--wrapper .app--wrapper--item .transactions--title, .transactions .app--wrapper .form .transactions--title, .transactions .app--wrapper .userList .transactions--title, .app--wrapper .transactions .transactions--title, .button, .form .form--submit, .form .form--selected--user, .form .form--input--wrapper, .form .form--input--wrapper[name="text"] .form--input, .form .form--input--wrapper[name="radio"] .form--input--label, .form .form--task--colour--selector--wrapper, .form .form--task--colour--selector--wrapper .form--task--colour--selector--wrapper--label, .form .form--task--colour--selector--wrapper .task--colour--selector--label, .userList .userList--item--wrapper, .userList .userList--item--wrapper .userList--item, .userList .userList--item--wrapper .userList--item .userList--item--image i, .userList .userList--item--wrapper .userList--item .userList--item--name,
+.inlineBlock, .app--wrapper .app--wrapper--header, .app--wrapper .app--wrapper--item, .app--wrapper .form, .app--wrapper .userList, .app--wrapper .transactions, .app--wrapper .app--wrapper--item .app--wrapper--item--title, .app--wrapper .form .app--wrapper--item--title, .app--wrapper .userList .app--wrapper--item--title, .app--wrapper .transactions .app--wrapper--item--title, .form .app--wrapper .app--wrapper--item .form--title, .app--wrapper .form .form--title, .form .app--wrapper .userList .form--title, .form .app--wrapper .transactions .form--title, .userList .app--wrapper .app--wrapper--item .userList--title, .userList .app--wrapper .form .userList--title, .app--wrapper .userList .userList--title, .userList .app--wrapper .transactions .userList--title, .transactions .app--wrapper .app--wrapper--item .transactions--title, .transactions .app--wrapper .form .transactions--title, .transactions .app--wrapper .userList .transactions--title, .app--wrapper .transactions .transactions--title, .button, .form .form--submit, .form .form--selected--user, .form .form--input--wrapper, .form .form--input--wrapper[name="text"] .form--input, .form .form--input--wrapper[name="radio"] .form--input--label, .form .form--task--colour--selector--wrapper, .form .form--task--colour--selector--wrapper .form--task--colour--selector--wrapper--label, .form .form--task--colour--selector--wrapper .task--colour--selector--label, .userList .userList--item--wrapper, .userList .userList--item--wrapper .userList--item, .userList .userList--item--wrapper .userList--item .userList--item--image i, .userList .userList--item--wrapper .userList--item .userList--item--name,
 .userList .userList--item--wrapper .userList--item .userList--item--amount,
 .userList .userList--item--wrapper .userList--item .userList--item--lastWorked, .transactions .transactions--wrapper--wrapper, .transactions .transactions--wrapper--wrapper .transactions--wrapper, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--wrapper--message, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item .transactions--item--text {
   position: relative;
@@ -33,7 +33,7 @@ body {
   display: inline-block;
   vertical-align: top; }
 
-.absolute, .fixed, .form .form--input--wrapper[name="text"] .form--input--label, .userList .userList--item--wrapper .userList--item .userList--item--image, .userList .userList--item--wrapper .userList--item .userList--item--selected, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item i {
+.absolute, .fixed, .app--wrapper, .form .form--input--wrapper[name="text"] .form--input--label, .userList .userList--item--wrapper .userList--item .userList--item--image, .userList .userList--item--wrapper .userList--item .userList--item--selected, .transactions .transactions--wrapper--wrapper .transactions--wrapper .transactions--item i {
   position: absolute;
   top: 0;
   left: 0; }
@@ -61,24 +61,34 @@ body {
   font-family: 'Poppins', sans-serif; }
 
 .app--wrapper {
-  width: 100%;
-  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 6px;
+  width: 90%;
   padding: 5vh;
+  text-align: left;
+  padding: 5vh;
+  background-color: rgba(11, 13, 15, 0.5);
   text-align: left; }
+  .app--wrapper .app--wrapper--header {
+    width: 100%;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center; }
   .app--wrapper .app--wrapper--item, .app--wrapper .form, .app--wrapper .userList, .app--wrapper .transactions {
-    width: 30%;
-    margin: 0 5% 0 0;
+    width: calc(50% - 2.5vh);
     height: 100%;
     padding: 5vh;
-    background-color: rgba(11, 13, 15, 0.5);
     border-radius: 6px;
+    border: 1px solid red;
     backdrop-filter: blur(15px); }
     .app--wrapper .app--wrapper--item:last-child, .app--wrapper .form:last-child, .app--wrapper .userList:last-child, .app--wrapper .transactions:last-child {
-      margin: 0; }
+      margin: 0 0 0 5vh; }
     .app--wrapper .app--wrapper--item .app--wrapper--item--title, .app--wrapper .form .app--wrapper--item--title, .app--wrapper .userList .app--wrapper--item--title, .app--wrapper .transactions .app--wrapper--item--title, .form .app--wrapper .app--wrapper--item .form--title, .app--wrapper .form .form--title, .form .app--wrapper .userList .form--title, .form .app--wrapper .transactions .form--title, .userList .app--wrapper .app--wrapper--item .userList--title, .userList .app--wrapper .form .userList--title, .app--wrapper .userList .userList--title, .userList .app--wrapper .transactions .userList--title, .transactions .app--wrapper .app--wrapper--item .transactions--title, .transactions .app--wrapper .form .transactions--title, .transactions .app--wrapper .userList .transactions--title, .app--wrapper .transactions .transactions--title {
       font-size: 1rem;
       font-weight: bold;
-      text-transform: uppercase; }
+      text-transform: capitalize; }
 
 .button, .form .form--submit {
   background-color: #324ceb;

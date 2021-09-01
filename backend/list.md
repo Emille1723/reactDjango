@@ -1,0 +1,15 @@
+Package             Version
+------------------- -------
+asgiref             3.4.1
+cffi                1.14.6
+cryptography        3.4.8
+Django              3.2.7
+django-cors-headers 3.8.0
+django-rest-knox    4.1.0
+djangorestframework 3.12.4
+pip                 21.1.3
+pycparser           2.20
+pytz                2021.1
+setuptools          57.4.0
+sqlparse            0.4.1
+wheel               0.37.0

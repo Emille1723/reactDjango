@@ -1,13 +1,15 @@
-import Form from './form';
-import UsersList from './usersList';
-import Transactions from './transactions';
+
 
 const AppWrapper = () =>{
     return(
         <div className="app--wrapper">
-			<UsersList />
-            <Form />
-			<Transactions />
+			<header className="app--wrapper--header">finace tracker</header>
+			<div className="app--wrapper--item">
+				<header className="app--wrapper--item--title">your activity for this month</header>
+			</div>
+			<div className="app--wrapper--item">
+				<header className="app--wrapper--item--title">track by date</header>
+			</div>
         </div>
     )
 }

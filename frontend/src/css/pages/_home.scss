@@ -1,30 +1,43 @@
 .app--wrapper{
-    @extend .inlineBlock;
-    width:100%;
-    height:100vh;
+    @extend .absolute;
+	top:50%; left:50%;
+	@include transXY();
+	border-radius:6px;
+    width:90%;
+    // height:100vh;
     padding:5vh;
     text-align:left;
+	padding:5vh;
+	background-color:rgba(11,13,15,.5);
+	text-align:left;
+	// border:1px solid red;
+	.app--wrapper--header{
+		@extend .inlineBlock;
+		width:100%;
+		font-size:2rem;
+		text-transform:capitalize;
+		text-align:center;
+		// padding:0 0 5vh 0;
+		// border:1px solid red;
+		// font-size:;
+	}
     .app--wrapper--item{
         @extend .inlineBlock;
-        width:30%;
-         margin:0 5% 0 0;
+        width:calc(50% - 2.5vh);
         height:100%;
         padding:5vh;
-        background-color:rgba(11,13,15,.5);
+        // background-color:rgba(11,13,15,.5);
         border-radius:6px;
+		border:1px solid red;
 		backdrop-filter: blur(15px);
         &:last-child{
-            margin:0;
+            margin:0 0 0 5vh;
         }
 		.app--wrapper--item--title{
 			@extend .inlineBlock;
 			font-size:1rem;
 			font-weight:bold;
-			text-transform:uppercase;
+			text-transform:capitalize;
 		}
     }
-    // .taskview,
-    // .tasklist{
-    //     @extend .app--wrapper--item;
-    // }
 }
